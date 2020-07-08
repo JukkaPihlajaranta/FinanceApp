@@ -1,0 +1,166 @@
+:root{
+    --base-font: 'Chelsea Market', cursive;
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    font-family: var(--base-font);
+}
+
+h1, h2, h3, h4{
+    color: rgb(243, 228, 93);
+    text-shadow: 2px 2px 2px rgb(182, 182, 182);
+}
+
+.container{
+    margin: 10px;
+    width: 100%
+}
+
+.btn{
+    padding: 2px 10px;
+    /*border: 1px black solid;*/
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-family: var(--base-font);
+}
+
+.btn:hover{
+    color: rgb(185, 185, 185);
+}
+
+.btn.red{ background: salmon; }
+.btn.green{ background: rgb(0, 172, 0); }
+.btn.blue{ background: rgb(0, 130, 190); }
+
+.btnRow{
+    width: 60vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.colorBlock{
+    display: block;
+    /* background: gray; */
+    border-radius: 4px;
+    height: 21px;
+    width: 21px; 
+    margin-right: 5px;   
+    
+}
+
+/* INPUT FIELDS*/
+.inputFields{
+    width: 60vh;
+}
+
+.inputFields legend{
+    padding: 5px;
+    text-shadow: 1px 1px 1px gray;
+}
+
+.inputFields fieldset{
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.inputFields.lightred legend{ color:rgb(255, 200, 200); }
+.inputFields.lightred fieldset{ border:1px solid rgb(255, 200, 200); }
+.inputFields.red legend{ color:red; }
+.inputFields.red fieldset{ border: 2px dashed red; border-radius: 0px; }
+
+.inputFields.lightgreen legend{ color:rgb(60, 130, 50); }
+.inputFields.lightgreen fieldset{ border:1px solid rgb(60, 130, 50); }
+.inputFields.green legend{ color:rgb(60, 225, 60); }
+.inputFields.green fieldset{ border: 2px solid rgb(60, 225, 60); }
+
+.rowDiv{
+    margin-bottom: 5px;
+    margin-left: 5px;
+    display: flex;
+}
+.startElement{
+    width: 150px;
+}
+
+
+/* INPUTS */
+.inputFields input{
+    border-radius: 4px;
+    border: 1px solid gray;
+    margin: 0px 5px;
+    height:20px;
+    font-size: 15px;
+    width: 80px;
+    font-family: var(--base-font);
+    text-align: center;
+}
+
+
+
+
+.charts{
+    /* display: flex; */
+    width: 400px;
+    height: 200px;
+}
+
+.result{
+    width: 60vh;
+    text-align: center;
+}
+
+.result.green{
+    border: 2px solid rgb(124, 253, 124);
+    border-radius: 5px;
+    padding: 10px;
+    color: rgb(0, 200, 0);
+}
+
+.result.red{
+    border: 2px dashed red;
+    
+    padding: 10px;
+    color: red;
+}
+
+#colorPicker{
+    width: 50px;
+    
+    border: none;
+    background: none;
+}
+
+
+@media screen and (max-width: 490px) {
+    /* body {
+      background-color: olive;
+    } */
+
+
+    .inputFields{
+        width: 100%;
+    }
+
+    .btnRow{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .result{
+        width: 100%;
+        text-align: center;
+    }
+
+
+  }
