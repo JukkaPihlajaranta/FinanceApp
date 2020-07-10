@@ -4,7 +4,7 @@ const inputIncome = document.getElementById('inputIncome');
 const newSpend = document.getElementById('spendName');
 const colorPicker = document.getElementById('colorPicker');
 
-//OTHER ELEMENTS
+//MISC ELEMENTS
 const spendDiv = document.getElementById('spendDiv');
 const result = document.getElementById('result');
 const clearBtn = document.getElementById('clearBtn');
